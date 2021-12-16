@@ -1,0 +1,4 @@
+#about .spiceinit
+	paste into /.xschem/simulations/
+#about autogen.sh
+	paste into /ngspice/
