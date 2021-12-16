@@ -32,7 +32,9 @@ cd
 
 # libs sky130 to xschem
 echo libs sky130 to xschem
-cd /home/$(whoami)/.xschem
+cd /home/$(whoami)/.xschem/simulations
+cp /home/$(whoami)/sky130_workspace/utilities/.spiceinit .spiceinit
+cd ..
 mkdir xschem_library
 cd xschem_library/
 git clone https://github.com/StefanSchippers/xschem_sky130
@@ -79,6 +81,7 @@ echo ADMS suport
 cd ngspice/
 wget -O ng_adms_va.tar.gz https://sourceforge.net/projects/ngspice/files/ng-spice-rework/35/ngspice-adms-va.7z/download
 7za e ngspice-adms-va.7z  -aoa
+./autogen.sh --adms
 mkdir release
 cd release
 ../configure --with-x --enable-xspice --disable-debug --enable-cider --with-readline=yes --enable-openmp
@@ -86,4 +89,4 @@ make -j4
 sudo make install
 
 cd ../..
-echo End!!
+echo End
