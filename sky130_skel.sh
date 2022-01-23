@@ -5,11 +5,11 @@ echo  Install xschem + xschem_sky130 + skywater-pdk + ngspice +adms
 echo solve dependencies
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install gcc gcc-c++ autoconf automake patch patchutils indent libtool python3 cmake git -y
+sudo apt-get install gcc autoconf automake patch patchutils indent libtool python3 cmake git -y
 sudo apt-get install make libx11-6 libx11-dev libxrender1 libxrender-dev libxcb1 libx11-xcb-dev libcairo2 libcairo2-dev tcl8.6 tcl8.6-dev tk8.6 tk8.6-dev flex bison libxpm4 libxpm-dev gawk m4 -y
 sudo apt-get install m4 tcsh csh libx11-dev tcl-dev tk-dev libcairo2-dev libncurses-dev libglu1-mesa-dev freeglut3-dev mesa-common-dev -y
 sudo apt-get install gcc autoconf automake patch patchutils indent libtool python3 cmake git -y
-sudo apt install build-essential -y
+sudo apt-get install build-essential -y
 sudo apt-get install build-essential -y
 sudo apt-get install automake libtool gperf flex bison -y
 sudo apt-get install libxml2 libxml2-dev -y
@@ -19,6 +19,17 @@ sudo apt-get install p7zip -y
 sudo apt-get install adms -y
 sudo apt-get install libxaw7-dev -y
 sudo apt-get install libreadline-dev libreadline8 -y
+sudo apt install p7zip-full
+
+#klayout
+sudo apt-get install qt5-qmake
+sudo apt-get install qt5-default
+sudo apt install python3.8
+sudo apt install python3.8-dev
+sudo apt-get install -y libqt5xmlpatterns5-dev
+sudo apt-get install python3-pyqt5
+sudo apt-get install qtcreator pyqt5-dev-tools
+sudo apt-get install qttools5-dev-tools
 
 
 # download and install Xschem
@@ -49,7 +60,7 @@ cd skywater-pdk
 # initialise pdk
 echo initialise pdk
 git submodule init libraries/sky130_fd_pr/latest libraries/sky130_fd_sc_hd/latest libraries/sky130_fd_sc_hdll/latest libraries/sky130_fd_sc_hs/latest libraries/sky130_fd_sc_ms/latest libraries/sky130_fd_sc_ls/latest libraries/sky130_fd_sc_lp/latest  libraries/sky130_fd_sc_hvl/latest
-git submodule update
+sudo git submodule update
 sudo make timing
 
 # config pdk to xschem and ngspice
@@ -79,7 +90,7 @@ cd ..
 # amds suport 
 echo ADMS suport
 cd ngspice/
-wget -O ng_adms_va.tar.gz https://sourceforge.net/projects/ngspice/files/ng-spice-rework/35/ngspice-adms-va.7z/download
+wget -O ng_adms_va.7z https://sourceforge.net/projects/ngspice/files/ng-spice-rework/36/ngspice-adms-va.7z/download
 7za e ngspice-adms-va.7z  -aoa
 ./autogen.sh --adms
 mkdir release
@@ -89,4 +100,28 @@ make -j4
 sudo make install
 
 cd ../..
+
+# download and install magic
+# download
+git clone https://github.com/RTimothyEdwards/magic
+
+cd magic
+git checkout magic-8.3
+
+# compile & install
+sudo ./configure
+sudo make
+sudo make install
+cd ..
+
+#download the open pdk
+git clone https://github.com/RTimothyEdwards/open_pdks
+
+cd open_pdks
+git checkout open_pdks-1.0
+sudo ./configure --enable-sky130-pdk=/home/hugodg/sky130_skel/skywater-pdk/libraries
+cd sky130 
+sudo make
+sudo make install
+
 echo End
