@@ -151,4 +151,10 @@ echo "Gedit-SPICE-syntax-highlighting"
 cd utilities 
 sudo cp spice.lang /usr/share/gtksourceview-4/language-specs/spice.lang
 cd ..
+
+echo "Install Klayout"
+sudo apt-get install klayout
+
+echo "Now, install the sky130 tech to klayout on:"
+echo "https://github.com/britovski/sky130_klayout_pdk"
 echo "End"
