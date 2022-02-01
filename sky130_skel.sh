@@ -5,7 +5,6 @@ echo  "Install xschem + xschem_sky130 + skywater-pdk + ngspice +adms + asitic + 
 echo "solve dependencies"
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install xterm
 sudo apt-get install gcc autoconf automake patch patchutils indent libtool python3 cmake git -y
 sudo apt-get install make libx11-6 libx11-dev libxrender1 libxrender-dev libxcb1 libx11-xcb-dev libcairo2 libcairo2-dev tcl8.6 tcl8.6-dev tk8.6 tk8.6-dev flex bison libxpm4 libxpm-dev gawk m4 -y
 sudo apt-get install m4 tcsh csh libx11-dev tcl-dev tk-dev libcairo2-dev libncurses-dev libglu1-mesa-dev freeglut3-dev mesa-common-dev -y
@@ -158,4 +157,12 @@ sudo apt-get install klayout
 
 echo "Now, install the sky130 tech to klayout on:"
 echo "https://github.com/britovski/sky130_klayout_pdk"
+
+echo "Netgen"
+git clone https://github.com/RTimothyEdwards/netgen
+cd netgen/
+./configure 
+sudo make
+sudo make install
+cd ..
 echo "End"
