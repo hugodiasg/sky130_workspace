@@ -33,6 +33,7 @@ sudo apt-get install qttools5-dev -y
 sudo apt-get install qtmultimedia5-dev libqt5multimediawidgets5 -y
 sudo apt-get install libqt5svg5* -y
 sudo apt-get install libqt5svg5-dev -y
+sudo apt-get install gedit -y
 
 # download skywater pdk
 echo "Download skywater pdk"
