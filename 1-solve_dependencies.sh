@@ -33,4 +33,4 @@ sudo apt-get install qtmultimedia5-dev libqt5multimediawidgets5 -y
 sudo apt-get install libqt5svg5* -y
 sudo apt-get install libqt5svg5-dev -y
 sudo apt-get install gedit -y
-sudo apt install python3-pip -y
+sudo apt install python3-pip klayout -y
