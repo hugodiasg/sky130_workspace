@@ -17,7 +17,7 @@ sudo apt-get install p7zip -y
 sudo apt-get install adms -y
 sudo apt-get install libxaw7-dev -y
 sudo apt-get install libreadline-dev libreadline8 -y
-sudo apt install p7zip-full -y
+sudo apt-get install p7zip-full -y
 #Asitic
 sudo apt-get install gcc-multilib -y
 sudo apt-get install libxtst6:i386 -y
