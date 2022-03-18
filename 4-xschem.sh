@@ -19,7 +19,7 @@ ln -s /home/$(whoami)/.xschem/xschem_library/xschem_sky130
 
 # config pdk to xschem and ngspice
 echo "Config pdk to xschem and ngspice"
-cd skywater-pdk/libraries
+cd /home/$(whoami)/sky130_workspace/skywater-pdk/libraries
 cp -a sky130_fd_pr sky130_fd_pr_ngspice
 cd sky130_fd_pr_ngspice/latest/
 patch -p2 </home/$(whoami)/.xschem/xschem_library/xschem_sky130/sky130_fd_pr.patch
