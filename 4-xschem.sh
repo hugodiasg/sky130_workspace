@@ -2,7 +2,7 @@ echo "Download and install Xschem"
 git clone https://github.com/StefanSchippers/xschem
 cd xschem/
 ./configure
-make -j4
+make 
 sudo make install
 cd ..
 
