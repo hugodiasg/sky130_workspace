@@ -1,0 +1,9 @@
+example of project with sky130 workspace
+
+dir project
+	dir mag
+		* sudo ln -s /home/$(whoami)/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.magicrc .magicrc 
+	dir netgen
+		* sudo ln -s /home/$(whoami)/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/netgen/sky130A_setup.tcl setup.tcl
+	dir xschem
+		* sudo ln -s /home/$(whoami)/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/xschem/xschemrc xschemrc
