@@ -1,5 +1,9 @@
 #ASITIC
 echo "Install ASITIC"
+#Asitic
+sudo apt-get install gcc-multilib -y
+sudo apt-get install libxtst6:i386 -y
+
 mkdir asitic
 cd asitic
 wget http://rfic.eecs.berkeley.edu/~niknejad/Asitic/grackle/asitic_linux.gz
