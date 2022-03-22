@@ -19,15 +19,15 @@ sudo apt-get install libxaw7-dev -y
 sudo apt-get install libreadline-dev libreadline8 -y
 sudo apt-get install p7zip-full -y
 #klayout
-sudo apt-get install qt5-default -y
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt-get update
-sudo apt-get install python3.8 -y
-sudo apt-get install python3.8-dev -y
-sudo apt-get install libqt5xmlpatterns5-dev -y
-sudo apt-get install qttools5-dev -y
-sudo apt-get install qtmultimedia5-dev libqt5multimediawidgets5 -y
-sudo apt-get install libqt5svg5* -y
-sudo apt-get install libqt5svg5-dev -y
-sudo apt-get install gedit -y
+#sudo apt-get install qt5-default -y
+#sudo add-apt-repository ppa:deadsnakes/ppa
+#sudo apt-get update
+#sudo apt-get install python3.8 -y
+#sudo apt-get install python3.8-dev -y
+#sudo apt-get install libqt5xmlpatterns5-dev -y
+#sudo apt-get install qttools5-dev -y
+#sudo apt-get install qtmultimedia5-dev libqt5multimediawidgets5 -y
+#sudo apt-get install libqt5svg5* -y
+#sudo apt-get install libqt5svg5-dev -y
+#sudo apt-get install gedit -y
 sudo apt install python3-pip klayout -y
