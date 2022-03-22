@@ -8,9 +8,9 @@ cd ..
 
 # libs sky130 to xschem
 echo "libs sky130 to xschem"
-cd /home/$(whoami)/.xschem/simulations
+cd /home/$(whoami)/.xschem/simulations/
 cp /home/$(whoami)/sky130_workspace/utilities/.spiceinit .spiceinit
-cd ..
+cd /home/$(whoami)/.xschem/
 mkdir xschem_library
 cd xschem_library/
 git clone https://github.com/StefanSchippers/xschem_sky130
