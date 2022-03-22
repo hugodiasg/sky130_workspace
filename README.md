@@ -6,6 +6,8 @@ Layout: Magic and Klayout
 
 Schematic: Xschem
 
+Make and simulate inductors and transformers: Asitic
+
 Simulations: Ngspice and ADMS
 
 Layout Vs Schematic (LVS): Netgen
