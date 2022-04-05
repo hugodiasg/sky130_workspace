@@ -2,7 +2,7 @@
 echo "Install ASITIC"
 #Asitic
 sudo apt-get install gcc-multilib -y
-sudo apt-get install libxtst6:i386 -y
+
 
 mkdir asitic
 cd asitic
@@ -15,6 +15,12 @@ tar -xvzf doc_05_28_01.tgz
 tar -xvzf common.tgz 
 
 chmod +x asitic_linux
+
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install libc6:1386 libncurses5:i386 libstdc++6:i386 -y
+
+sudo apt-get install libxtst6:i386 -y
 
 wget http://old-releases.ubuntu.com/ubuntu/pool/universe/g/gcc-3.4/libg2c0_3.4.6-6ubuntu5_i386.deb
 sudo dpkg -i --force-all libg2c0_3.4.6-6ubuntu5_i386.deb
