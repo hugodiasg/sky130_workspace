@@ -17,4 +17,8 @@ Skywater-pdk
 
 Open-pdk
 
+## Others
+
+Gedit SPICE Highlight
+
 
