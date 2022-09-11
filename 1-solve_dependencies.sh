@@ -33,3 +33,7 @@ sudo apt-get install gtk2.0
 #sudo apt-get install libqt5svg5-dev -y
 #sudo apt-get install gedit -y
 sudo apt install python3-pip klayout -y
+# Gaw
+sudo apt-get install libgtk-3-dev -y
+sudo apt-get install libasound2 -y
+sudo apt-get install alsa -y
