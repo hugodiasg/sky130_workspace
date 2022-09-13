@@ -10,6 +10,8 @@ Make and simulate inductors and transformers: Asitic
 
 Simulations: Ngspice and ADMS
 
+Graphic Visualization: Gaw
+
 Layout Vs Schematic (LVS): Netgen
 
 ## Sky130 repos
