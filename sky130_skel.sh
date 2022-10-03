@@ -7,3 +7,4 @@ sh 6-klayout.sh
 sh 7-netgen.sh
 sh 8-asitic.sh
 sh 9-gedit-spice-highlight.sh
+sh 10-gaw.sh
