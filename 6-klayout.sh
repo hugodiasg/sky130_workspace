@@ -1,4 +1,5 @@
 echo "Install Klayout sky130 tech"
+klayout &
 cd
 cd .klayout
 mkdir tech
