@@ -1,5 +1,8 @@
 echo "Install Klayout sky130 tech"
-klayout &
+if [ ! -d ~/.klayout ]; then
+  # Create the directory
+  mkdir ~/.xschem
+fi
 cd
 cd .klayout
 mkdir tech
