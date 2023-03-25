@@ -1,10 +1,12 @@
-sh 1-solve_dependencies.sh
-sh 2-skywater_pdk.sh
-sh 3-magic.sh
-sh 4-xschem.sh
-sh 5-ngspice_adms.sh
-sh 6-klayout.sh
-sh 7-netgen.sh
-sh 8-asitic.sh
-sh 9-gedit-spice-highlight.sh
-sh 10-gaw.sh
+./1-solve_dependencies.sh
+./2-skywater_pdk.sh
+./3-magic.sh
+./4-xschem.sh
+./5-ngspice_adms.sh
+./6-klayout.sh
+./7-netgen.sh
+./8-asitic.sh
+./9-gedit-spice-highlight.sh
+./10-gaw.sh
+./11-ghdl,gtkwave,iverilog.sh
+./12-openlane.sh
