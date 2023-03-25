@@ -5,7 +5,10 @@ cd xschem/
 make 
 sudo make install
 cd ..
-xschem &
+if [ ! -d ~/.xschem ]; then
+  # Create the directory
+  mkdir ~/.xschem
+fi
 
 # libs sky130 to xschem
 echo "libs sky130 to xschem"
