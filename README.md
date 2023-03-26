@@ -14,7 +14,16 @@ Graphic Visualization: Gaw
 
 Layout Vs Schematic (LVS): Netgen
 
+Verilog: iVerilog
+
+VHDL: GHDL
+
+Digital simulation: GTKWave
+
+Digital Synthesis: Yosys, Openlane, ghdl-yosys-plugin
+
 ## Sky130 repos
+
 Skywater-pdk
 
 Open-pdk
