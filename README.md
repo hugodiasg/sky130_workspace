@@ -1,5 +1,7 @@
 # sky130_workspace
-Install softwares to IC design in sky130nm tech(https://skywater-pdk.readthedocs.io/en/main/)
+Install softwares to IC design in sky130nm tech(https://skywater-pdk.readthedocs.io/en/main/).
+
+Run ./sky130_skel.sh to install everything.
 
 ## Softwares:
 Layout: Magic and Klayout
