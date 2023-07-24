@@ -1,8 +1,6 @@
 echo "Install Klayout sky130 tech"
-if [ ! -d ~/.klayout ]; then
-  # Create the directory
-  mkdir ~/.klayout
-fi
+mkdir ~/.klayout
+
 cd ~/.klayout
 mkdir tech
 cd tech
