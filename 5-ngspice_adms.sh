@@ -17,7 +17,7 @@ cd ..
 echo "ngspice - ADMS suport"
 
 #wget -O ngspice-adms-va.7z https://sourceforge.net/projects/ngspice/files/ng-spice-rework/36/ngspice-adms-va.7z/download
-wget -O ngspice-adms-va.7z https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/38/ngspice-adms-va.7z/download
+wget -O ngspice-adms-va.7z https://sourceforge.net/projects/ngspice/files/ng-spice-rework/39/ngspice-adms-va.7z/download
 7za e ngspice-adms-va.7z  -aoa
 ./autogen.sh --adms
 mkdir release
