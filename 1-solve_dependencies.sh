@@ -19,7 +19,7 @@ sudo apt-get install libxaw7-dev -y
 sudo apt-get install libreadline-dev libreadline8 -y
 sudo apt-get install p7zip-full -y
 sudo apt install xterm -y
-sudo apt-get install gtk2.0
+sudo apt-get install gtk2.0 -y
 #klayout
 #sudo apt-get install qt5-default -y
 #sudo add-apt-repository ppa:deadsnakes/ppa
