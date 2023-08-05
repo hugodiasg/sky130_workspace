@@ -9,4 +9,4 @@
 ./9-gedit-spice-highlight.sh
 ./10-gaw.sh
 ./11-ghdl,gtkwave,iverilog,yosys.sh
-./12-openlane.sh
+#./12-openlane.sh
