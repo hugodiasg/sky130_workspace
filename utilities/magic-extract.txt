@@ -8,8 +8,8 @@ ext2spice
 select top cell
 flatten <device_name>_flat
 load <device_name>_flat
-cellname delete <device>
-cellname rename <device>_flat <device>
+cellname delete <device_name>
+cellname rename <device_name>_flat <device_name>
 select top cell
 extract all
 ext2sim labels on
