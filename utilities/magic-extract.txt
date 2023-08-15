@@ -6,8 +6,8 @@ ext2spice
 
 # Full RC Extraction
 select top cell
-flatten <device>_flat
-load <device>_flat
+flatten <device_name>_flat
+load <device_name>_flat
 cellname delete <device>
 cellname rename <device>_flat <device>
 select top cell
